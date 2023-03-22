@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --lg-font: "Kaisei Tokumin", serif;
+  --sm-font: "Poppins", sans-serif;
+  --pink: #e5345b;
+}
+body {
+  font-family: var(--sm-font);
+}
+.top-menu {
+  font-size: 12px;
+}
+.top-span {
+  color: black;
+}
+.logo {
+  width: 100px;
+  height: 30px;
+}
+.search-box {
+  background: #eaecef;
+  border: 0px solid black;
+  padding-left: 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+  min-width: 330px;
+}
+.search-container {
+  position: relative;
+}
+.search-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+.search-btn:hover {
+  color: #000;
+  cursor: pointer;
+}
+.person-image {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.hr-nav {
+  color: "#686868";
+  margin: 0;
+}
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  font-size: 18px;
+  color: #000;
+}
+.brandImage {
+  filter: grayscale(100%);
+}
+.brand-table {
+  width: 100%;
+  color: #7e7e7e;
+}
+table,
+tr,
+td {
+  border: 1px solid #7e7e7e;
+  border-collapse: collapse;
+}
+td {
+  text-align: center;
+}
+.featured-link {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+}
+.quick-view {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
