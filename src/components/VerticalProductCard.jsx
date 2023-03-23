@@ -10,14 +10,21 @@ import {
   MDBRipple,
   MDBBtn,
 } from "mdb-react-ui-kit";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
-function VerticalProductCard() {
+function VerticalProductCard({ data }) {
+  let b = [];
+  for (let i = 1; i <= 5; i++) {
+    if (i <= data.productRating) {
+      b.push(1);
+    } else b.push(0);
+  }
   return (
     <MDBContainer fluid className="mb-2">
       <MDBRow className="justify-content-center mb-0">
         <MDBCol md={12}>
           <MDBCard className="shadow-0 border rounded-3">
-            <MDBCardBody>
+            <MDBCardBody style={{ minHeight: "160px" }}>
               <MDBRow>
                 <MDBCol md={3} className="mb-4 mb-lg-0">
                   <MDBRipple
@@ -39,14 +46,19 @@ function VerticalProductCard() {
                   </MDBRipple>
                 </MDBCol>
                 <MDBCol md={9}>
-                  <h5>Quant trident shirts</h5>
+                  <p className="product-name">{data.productName}</p>
                   <div className="mt-1 mb-0 text-muted small">
-                    <p>rating</p>
-                    <span>100% cotton</span>
-                    <span>
-                      Best finish
-                      <br />
-                    </span>
+                    <p>
+                      {b.map((val) => {
+                        return val === 1 ? (
+                          <AiFillStar style={{ color: "yellow" }} />
+                        ) : (
+                          <AiOutlineStar />
+                        );
+                      })}
+                      <span>{data.totalReviews} reviews</span>
+                    </p>
+                    <p className="product-name">${data.productPrice}</p>
                   </div>
                 </MDBCol>
               </MDBRow>

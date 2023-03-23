@@ -6,20 +6,14 @@ const data = [
   {
     image:
       "https://res.cloudinary.com/dyff453oq/image/upload/v1679469751/ulux/slide-1_zlv5st.jpg",
-    caption: "Caption",
-    description: "Description Here",
   },
   {
     image:
       "https://res.cloudinary.com/dyff453oq/image/upload/v1679469751/ulux/slide-1_zlv5st.jpg",
-    caption: "Caption",
-    description: "Description Here",
   },
   {
     image:
       "https://res.cloudinary.com/dyff453oq/image/upload/v1679469751/ulux/slide-1_zlv5st.jpg",
-    caption: "Caption",
-    description: "Description Here",
   },
 ];
 
@@ -45,7 +39,7 @@ function HomeCarousel() {
                   <p>
                     <span
                       style={{
-                        background: "yellow",
+                        background: "#FFCA2C",
                         fontWeight: 900,
                         fontSize: "25px",
                         padding: "5px",
